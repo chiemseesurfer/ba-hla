@@ -1,0 +1,220 @@
+\hypertarget{class_example_fed_amb}{
+\section{ExampleFedAmb Class Reference}
+\label{class_example_fed_amb}\index{ExampleFedAmb@{ExampleFedAmb}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_example_fed_amb_ae067b0e893e88d7713e01d2bba478781}{ExampleFedAmb} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_example_fed_amb_a65b045a1989c20d40ba86c610d86014b}{
+virtual \hyperlink{class_example_fed_amb_a65b045a1989c20d40ba86c610d86014b}{$\sim$ExampleFedAmb} ()  throw ()}
+\label{class_example_fed_amb_a65b045a1989c20d40ba86c610d86014b}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_example_fed_amb_aa27c9d4b9c0cfbb59de2a973ec2040f7}{
+virtual void {\bfseries synchronizationPointRegistrationSucceeded} (std::wstring const \&label)  throw ( FederateInternalError )}
+\label{class_example_fed_amb_aa27c9d4b9c0cfbb59de2a973ec2040f7}
+
+\item 
+\hypertarget{class_example_fed_amb_a05407add5d67884ccbed9996da89a284}{
+virtual void {\bfseries synchronizationPointRegistrationFailed} (std::wstring const \&label, SynchronizationFailureReason reason)  throw ( FederateInternalError )}
+\label{class_example_fed_amb_a05407add5d67884ccbed9996da89a284}
+
+\item 
+\hypertarget{class_example_fed_amb_a1b929bbd1486db55d8e7e896dee56f24}{
+virtual void {\bfseries announceSynchronizationPoint} (std::wstring const \&label, VariableLengthData const \&theUserSuppliedTag)  throw ( FederateInternalError )}
+\label{class_example_fed_amb_a1b929bbd1486db55d8e7e896dee56f24}
+
+\item 
+\hypertarget{class_example_fed_amb_a669aaa11775b243bf31eeba1e3013da7}{
+virtual void {\bfseries federationSynchronized} (std::wstring const \&label)  throw ( FederateInternalError )}
+\label{class_example_fed_amb_a669aaa11775b243bf31eeba1e3013da7}
+
+\item 
+\hypertarget{class_example_fed_amb_ab19e5bb9c9b3ff8bd1ac0c502f442ef9}{
+virtual void {\bfseries timeRegulationEnabled} (LogicalTime const \&theFederateTime)  throw ( InvalidLogicalTime, 					NoRequestToEnableTimeRegulationWasPending, 					FederateInternalError)}
+\label{class_example_fed_amb_ab19e5bb9c9b3ff8bd1ac0c502f442ef9}
+
+\item 
+\hypertarget{class_example_fed_amb_a55bab7930d8dbad06ce854da213c44a8}{
+virtual void {\bfseries timeConstrainedEnabled} (LogicalTime const \&theFederateTime)  throw ( InvalidLogicalTime, 					NoRequestToEnableTimeConstrainedWasPending, 					FederateInternalError)}
+\label{class_example_fed_amb_a55bab7930d8dbad06ce854da213c44a8}
+
+\item 
+\hypertarget{class_example_fed_amb_a78023d52917d57b2dfe6999857c4385d}{
+virtual void {\bfseries timeAdvanceGrant} (LogicalTime const \&theTime)  throw ( InvalidLogicalTime, 					JoinedFederateIsNotInTimeAdvancingState, 					FederateInternalError)}
+\label{class_example_fed_amb_a78023d52917d57b2dfe6999857c4385d}
+
+\item 
+\hypertarget{class_example_fed_amb_a70393fb4c12f95503f8522405b82522f}{
+virtual void {\bfseries discoverObjectInstance} (ObjectInstanceHandle theObject, ObjectClassHandle theObjectClass, std::wstring const \&theObjectInstanceName)  throw ( CouldNotDiscover, 					ObjectClassNotKnown, 					FederateInternalError)}
+\label{class_example_fed_amb_a70393fb4c12f95503f8522405b82522f}
+
+\item 
+\hypertarget{class_example_fed_amb_a315fa8e1e38b2cdc20a73c6abecd09a0}{
+virtual void {\bfseries reflectAttributeValues} (ObjectInstanceHandle theObject, AttributeHandleValueMap const \&theAttributeValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType)  throw ( ObjectInstanceNotKnown, 					AttributeNotRecognized, 					AttributeNotSubscribed, 					FederateInternalError)}
+\label{class_example_fed_amb_a315fa8e1e38b2cdc20a73c6abecd09a0}
+
+\item 
+\hypertarget{class_example_fed_amb_a27954ad536950cd6c29dc6d3bf55f176}{
+virtual void {\bfseries reflectAttributeValues} (ObjectInstanceHandle theObject, AttributeHandleValueMap const \&theAttributeValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType, RegionHandleSet const \&theSentRegionHandleSet)  throw ( ObjectInstanceNotKnown, 					AttributeNotRecognized, 					AttributeNotSubscribed, 					FederateInternalError)}
+\label{class_example_fed_amb_a27954ad536950cd6c29dc6d3bf55f176}
+
+\item 
+virtual void \hyperlink{class_example_fed_amb_a45f42060f7637ba8832359f2b830a94c}{receiveInteraction} (InteractionClassHandle theInteraction, ParameterHandleValueMap const \&theParameterValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, FederateInternalError)
+\item 
+\hypertarget{class_example_fed_amb_a68427a7cc9e72248e0c82b017c65eb5f}{
+virtual void {\bfseries receiveInteraction} (InteractionClassHandle theInteraction, ParameterHandleValueMap const \&theParameterValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType, RegionHandleSet const \&theSentRegionHandleSet)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, FederateInternalError)}
+\label{class_example_fed_amb_a68427a7cc9e72248e0c82b017c65eb5f}
+
+\item 
+\hypertarget{class_example_fed_amb_af2de8b135f62a09427bafe12ca0f365a}{
+virtual void {\bfseries receiveInteraction} (InteractionClassHandle theInteraction, ParameterHandleValueMap const \&theParameterValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType, LogicalTime const \&theTime, OrderType receivedOrder)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, FederateInternalError)}
+\label{class_example_fed_amb_af2de8b135f62a09427bafe12ca0f365a}
+
+\item 
+\hypertarget{class_example_fed_amb_a20f86eaa21f48bd9b770f16610385554}{
+virtual void {\bfseries receiveInteraction} (InteractionClassHandle theInteraction, ParameterHandleValueMap const \&theParameterValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType, LogicalTime const \&theTime, OrderType receivedOrder, RegionHandleSet const \&theSentRegionHandleSet)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, FederateInternalError)}
+\label{class_example_fed_amb_a20f86eaa21f48bd9b770f16610385554}
+
+\item 
+\hypertarget{class_example_fed_amb_ab4a518da511884fca73ef5ae13f094ff}{
+virtual void {\bfseries receiveInteraction} (InteractionClassHandle theInteraction, ParameterHandleValueMap const \&theParameterValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType, LogicalTime const \&theTime, OrderType receivedOrder, MessageRetractionHandle theHandle)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, InvalidLogicalTime, FederateInternalError)}
+\label{class_example_fed_amb_ab4a518da511884fca73ef5ae13f094ff}
+
+\item 
+\hypertarget{class_example_fed_amb_a5e693e84c59a8a36fe741b117c9817a7}{
+virtual void {\bfseries receiveInteraction} (InteractionClassHandle theInteraction, ParameterHandleValueMap const \&theParameterValues, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, TransportationType theType, LogicalTime const \&theTime, OrderType receivedOrder, MessageRetractionHandle theHandle, RegionHandleSet const \&theSentRegionHandleSet)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, InvalidLogicalTime, FederateInternalError)}
+\label{class_example_fed_amb_a5e693e84c59a8a36fe741b117c9817a7}
+
+\item 
+\hypertarget{class_example_fed_amb_a0b85c3c2443e2dcd968d8e896ab387d9}{
+virtual void {\bfseries removeObjectInstance} (ObjectInstanceHandle theObject, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder)  throw (ObjectInstanceNotKnown, FederateInternalError)}
+\label{class_example_fed_amb_a0b85c3c2443e2dcd968d8e896ab387d9}
+
+\item 
+\hypertarget{class_example_fed_amb_ace532e52fcab118c2b7623a4ecba9a42}{
+virtual void {\bfseries removeObjectInstance} (ObjectInstanceHandle theObject, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, LogicalTime const \&theTime, OrderType receivedOrder)  throw (ObjectInstanceNotKnown, FederateInternalError)}
+\label{class_example_fed_amb_ace532e52fcab118c2b7623a4ecba9a42}
+
+\item 
+\hypertarget{class_example_fed_amb_ad56676c5bbd958dc603bafac1b6cc61d}{
+virtual void {\bfseries removeObjectInstance} (ObjectInstanceHandle theObject, VariableLengthData const \&theUserSuppliedTag, OrderType sentOrder, LogicalTime const \&theTime, OrderType receivedOrder, MessageRetractionHandle theHandle)  throw (ObjectInstanceNotKnown, InvalidLogicalTime, FederateInternalError)}
+\label{class_example_fed_amb_ad56676c5bbd958dc603bafac1b6cc61d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_example_fed_amb_a8a69e5741467af89b88f78cd8f13dbc3}{
+double {\bfseries federateTime}}
+\label{class_example_fed_amb_a8a69e5741467af89b88f78cd8f13dbc3}
+
+\item 
+\hypertarget{class_example_fed_amb_a041ccd1ec026cb265fbfeecae23b3910}{
+double {\bfseries federateLookahead}}
+\label{class_example_fed_amb_a041ccd1ec026cb265fbfeecae23b3910}
+
+\item 
+\hypertarget{class_example_fed_amb_a46e252b54687c4e65ab8828e3dd63fb8}{
+bool {\bfseries isRegulating}}
+\label{class_example_fed_amb_a46e252b54687c4e65ab8828e3dd63fb8}
+
+\item 
+\hypertarget{class_example_fed_amb_aef8f58dd82e592ccde04ad13c09df051}{
+bool {\bfseries isConstrained}}
+\label{class_example_fed_amb_aef8f58dd82e592ccde04ad13c09df051}
+
+\item 
+\hypertarget{class_example_fed_amb_a976cde3536e8fe2d7ff510ada085a368}{
+bool {\bfseries isAdvancing}}
+\label{class_example_fed_amb_a976cde3536e8fe2d7ff510ada085a368}
+
+\item 
+\hypertarget{class_example_fed_amb_a1f884d79ea713aeb5256a4e30c8db1fa}{
+bool {\bfseries isAnnounced}}
+\label{class_example_fed_amb_a1f884d79ea713aeb5256a4e30c8db1fa}
+
+\item 
+\hypertarget{class_example_fed_amb_ab208dda183eceac54089afee4bd5f828}{
+bool {\bfseries isReadyToRun}}
+\label{class_example_fed_amb_ab208dda183eceac54089afee4bd5f828}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_example_fed_amb_a92b9228114730b2620633bae0cdff3a6}{convertTime} (LogicalTime const \&theTime)
+\item 
+std::wstring \hyperlink{class_example_fed_amb_ad7429d1ac4d3d70c0afb5cd607f67924}{variableLengthDataToWstring} (const rti1516::VariableLengthData \&variableLengthData)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_example_fed_amb_ae067b0e893e88d7713e01d2bba478781}{
+\index{ExampleFedAmb@{ExampleFedAmb}!ExampleFedAmb@{ExampleFedAmb}}
+\index{ExampleFedAmb@{ExampleFedAmb}!ExampleFedAmb@{ExampleFedAmb}}
+\subsubsection[{ExampleFedAmb}]{\setlength{\rightskip}{0pt plus 5cm}ExampleFedAmb::ExampleFedAmb (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_example_fed_amb_ae067b0e893e88d7713e01d2bba478781}
+
+
+Constructor. 
+
+NOTE: The main part of the functions in this file is to print something on stdout to see whether the function is called or not. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_example_fed_amb_a92b9228114730b2620633bae0cdff3a6}{
+\index{ExampleFedAmb@{ExampleFedAmb}!convertTime@{convertTime}}
+\index{convertTime@{convertTime}!ExampleFedAmb@{ExampleFedAmb}}
+\subsubsection[{convertTime}]{\setlength{\rightskip}{0pt plus 5cm}double ExampleFedAmb::convertTime (
+\begin{DoxyParamCaption}
+\item[{LogicalTime const \&}]{ theTime}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_fed_amb_a92b9228114730b2620633bae0cdff3a6}
+convert Logical System time to Federate time which can be understood by RTI \hypertarget{class_example_fed_amb_a45f42060f7637ba8832359f2b830a94c}{
+\index{ExampleFedAmb@{ExampleFedAmb}!receiveInteraction@{receiveInteraction}}
+\index{receiveInteraction@{receiveInteraction}!ExampleFedAmb@{ExampleFedAmb}}
+\subsubsection[{receiveInteraction}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleFedAmb::receiveInteraction (
+\begin{DoxyParamCaption}
+\item[{InteractionClassHandle}]{ theInteraction, }
+\item[{ParameterHandleValueMap const \&}]{ theParameterValues, }
+\item[{VariableLengthData const \&}]{ theUserSuppliedTag, }
+\item[{OrderType}]{ sentOrder, }
+\item[{TransportationType}]{ theType}
+\end{DoxyParamCaption}
+)  throw (InteractionClassNotRecognized, InteractionParameterNotRecognized, InteractionClassNotSubscribed, FederateInternalError)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_example_fed_amb_a45f42060f7637ba8832359f2b830a94c}
+receiveInteraction with some detailed output 
+
+print the handle
+
+print the tag
+
+print the attribute information
+
+print the parameter handle
+
+print the parameter value 
+
+\hypertarget{class_example_fed_amb_ad7429d1ac4d3d70c0afb5cd607f67924}{
+\index{ExampleFedAmb@{ExampleFedAmb}!variableLengthDataToWstring@{variableLengthDataToWstring}}
+\index{variableLengthDataToWstring@{variableLengthDataToWstring}!ExampleFedAmb@{ExampleFedAmb}}
+\subsubsection[{variableLengthDataToWstring}]{\setlength{\rightskip}{0pt plus 5cm}std::wstring ExampleFedAmb::variableLengthDataToWstring (
+\begin{DoxyParamCaption}
+\item[{const rti1516::VariableLengthData \&}]{ variableLengthData}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_fed_amb_ad7429d1ac4d3d70c0afb5cd607f67924}
+convert variableLengthData to Wstring (deserialize)\par
+ for serialize function see \hyperlink{class_example_c_p_p_federate}{ExampleCPPFederate} class 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_example_fed_amb_8h}{ExampleFedAmb.h}\item 
+\hyperlink{_example_fed_amb_8cpp}{ExampleFedAmb.cpp}\end{DoxyCompactItemize}

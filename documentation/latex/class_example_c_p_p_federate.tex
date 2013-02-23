@@ -1,0 +1,353 @@
+\hypertarget{class_example_c_p_p_federate}{
+\section{ExampleCPPFederate Class Reference}
+\label{class_example_c_p_p_federate}\index{ExampleCPPFederate@{ExampleCPPFederate}}
+}
+
+
+{\ttfamily \#include $<$ExampleCPPFederate.h$>$}
+
+
+
+Collaboration diagram for ExampleCPPFederate:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_example_c_p_p_federate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_example_c_p_p_federate_abf1c885a01fb942a1120f8ea1b93b511}{
+\hyperlink{class_example_c_p_p_federate_abf1c885a01fb942a1120f8ea1b93b511}{ExampleCPPFederate} ()}
+\label{class_example_c_p_p_federate_abf1c885a01fb942a1120f8ea1b93b511}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_example_c_p_p_federate_a7b5810837c8fd7e5dadcf8ff84bfb6ec}{
+virtual \hyperlink{class_example_c_p_p_federate_a7b5810837c8fd7e5dadcf8ff84bfb6ec}{$\sim$ExampleCPPFederate} ()}
+\label{class_example_c_p_p_federate_a7b5810837c8fd7e5dadcf8ff84bfb6ec}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_example_c_p_p_federate_a1b8a60b635555f1723eab0bde159f5f5}{runFederate} (std::string federateName, std::string fom, std::string address)
+\begin{DoxyCompactList}\small\item\em Main Simulation Method. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::auto\_\-ptr$<$ rti1516::RTIambassador $>$ \hyperlink{class_example_c_p_p_federate_ac4d4b4416ce7ab50284c6a3c2deecaa4}{rtiamb}
+\item 
+\hyperlink{class_example_fed_amb}{ExampleFedAmb} $\ast$ \hyperlink{class_example_c_p_p_federate_acc3635b1ef16e90ac4fad62150808f1e}{fedamb}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::wstring \hyperlink{class_example_c_p_p_federate_af5e9565fdea92cdee1cd27bbe7ad74ce}{convertStringToWstring} (const std::string \&str)
+\item 
+rti1516::VariableLengthData \hyperlink{class_example_c_p_p_federate_aaf7e26b8a397f6d87ae2c27326cde893}{toVariableLengthData} (const char $\ast$s)
+\item 
+void \hyperlink{class_example_c_p_p_federate_a1fde2254c348389efc4cd894e03fce87}{initializeHandles} ()
+\item 
+void \hyperlink{class_example_c_p_p_federate_a8a6fa5956cc241097e15385ca2da433f}{waitForUser} ()
+\item 
+void \hyperlink{class_example_c_p_p_federate_a5184192fe0adb7b0259151dfbd8245e3}{enableTimePolicy} ()
+\item 
+void \hyperlink{class_example_c_p_p_federate_a57413d733e33b493abd929a7e46ff3dc}{publishAndSubscribe} ()
+\item 
+ObjectInstanceHandle \hyperlink{class_example_c_p_p_federate_afe34dcca7757b66ebbf9d2dea37e3440}{registerObject} ()
+\item 
+void \hyperlink{class_example_c_p_p_federate_ad2d6193d942e59a2cf5ee05531962967}{updateAttributeValues} (ObjectInstanceHandle objectHandle)
+\item 
+void \hyperlink{class_example_c_p_p_federate_a60bb15d2fc7a3437c13e8d8e09df8a1a}{sendInteraction} ()
+\item 
+void \hyperlink{class_example_c_p_p_federate_adfbfb26a2eeac388c3f5c2f68844ca13}{advanceTime} (double timestep)
+\item 
+void \hyperlink{class_example_c_p_p_federate_a7b6dcb57aea95b30d384187b551e03ae}{deleteObject} (ObjectInstanceHandle objectHandle)
+\item 
+\hypertarget{class_example_c_p_p_federate_a04d499d8cab5b555440199bc12524d65}{
+double {\bfseries getLbts} ()}
+\label{class_example_c_p_p_federate_a04d499d8cab5b555440199bc12524d65}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_example_c_p_p_federate_a0a0ce0cd597402f43b466766a3bd80a3}{
+ObjectClassHandle \hyperlink{class_example_c_p_p_federate_a0a0ce0cd597402f43b466766a3bd80a3}{aHandle}}
+\label{class_example_c_p_p_federate_a0a0ce0cd597402f43b466766a3bd80a3}
+
+\begin{DoxyCompactList}\small\item\em fom handles \item\end{DoxyCompactList}\item 
+\hypertarget{class_example_c_p_p_federate_a0aa9a8fe9e608c94ed28e6ba8f9cec40}{
+AttributeHandle {\bfseries aaHandle}}
+\label{class_example_c_p_p_federate_a0aa9a8fe9e608c94ed28e6ba8f9cec40}
+
+\item 
+\hypertarget{class_example_c_p_p_federate_afce0ad65479022ee261dc269d6869863}{
+AttributeHandle {\bfseries abHandle}}
+\label{class_example_c_p_p_federate_afce0ad65479022ee261dc269d6869863}
+
+\item 
+\hypertarget{class_example_c_p_p_federate_aa36baca43769fc83d21223d4e1b23dda}{
+AttributeHandle {\bfseries acHandle}}
+\label{class_example_c_p_p_federate_aa36baca43769fc83d21223d4e1b23dda}
+
+\item 
+\hypertarget{class_example_c_p_p_federate_a35fb74ee07c623089c1bf3a3e84cf5da}{
+InteractionClassHandle {\bfseries xHandle}}
+\label{class_example_c_p_p_federate_a35fb74ee07c623089c1bf3a3e84cf5da}
+
+\item 
+\hypertarget{class_example_c_p_p_federate_ae54b6dcb8713459480b0d2983d41d2cc}{
+ParameterHandle {\bfseries xaHandle}}
+\label{class_example_c_p_p_federate_ae54b6dcb8713459480b0d2983d41d2cc}
+
+\item 
+\hypertarget{class_example_c_p_p_federate_a537ff0d9190c2df3fdc526c0b51e0069}{
+ParameterHandle {\bfseries xbHandle}}
+\label{class_example_c_p_p_federate_a537ff0d9190c2df3fdc526c0b51e0069}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Example Federate implementation 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_example_c_p_p_federate_adfbfb26a2eeac388c3f5c2f68844ca13}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!advanceTime@{advanceTime}}
+\index{advanceTime@{advanceTime}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{advanceTime}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::advanceTime (
+\begin{DoxyParamCaption}
+\item[{double}]{ timestep}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_adfbfb26a2eeac388c3f5c2f68844ca13}
+This method will request a time advance to the current time, plus the given timestep. It will then wait until a notification of the time advance grant has been received. 
+
+request the advance
+
+wait for the time advance to be granted. ticking will tell the LRC to start delivering callbacks to the federate 
+
+\hypertarget{class_example_c_p_p_federate_af5e9565fdea92cdee1cd27bbe7ad74ce}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!convertStringToWstring@{convertStringToWstring}}
+\index{convertStringToWstring@{convertStringToWstring}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{convertStringToWstring}]{\setlength{\rightskip}{0pt plus 5cm}std::wstring ExampleCPPFederate::convertStringToWstring (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_af5e9565fdea92cdee1cd27bbe7ad74ce}
+convert normal C++-\/Strings to C++-\/Wstrings Wstrings are used by openrti \hypertarget{class_example_c_p_p_federate_a7b6dcb57aea95b30d384187b551e03ae}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!deleteObject@{deleteObject}}
+\index{deleteObject@{deleteObject}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{deleteObject}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::deleteObject (
+\begin{DoxyParamCaption}
+\item[{ObjectInstanceHandle}]{ objectHandle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_a7b6dcb57aea95b30d384187b551e03ae}
+This method will attempt to delete the object instance of the given handle. We can only delete objects we created, or for which we own the privilegeToDelete attribute. \hypertarget{class_example_c_p_p_federate_a5184192fe0adb7b0259151dfbd8245e3}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!enableTimePolicy@{enableTimePolicy}}
+\index{enableTimePolicy@{enableTimePolicy}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{enableTimePolicy}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::enableTimePolicy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_a5184192fe0adb7b0259151dfbd8245e3}
+This method will attempt to enable the various time related properties for the federate 
+
+enable time regulation
+
+wait for callback
+
+enable time constrained
+
+wait for callback 
+
+\hypertarget{class_example_c_p_p_federate_a1fde2254c348389efc4cd894e03fce87}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!initializeHandles@{initializeHandles}}
+\index{initializeHandles@{initializeHandles}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{initializeHandles}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::initializeHandles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_a1fde2254c348389efc4cd894e03fce87}
+This method will get all the relevant handle information from the RTIambassador \hypertarget{class_example_c_p_p_federate_a57413d733e33b493abd929a7e46ff3dc}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!publishAndSubscribe@{publishAndSubscribe}}
+\index{publishAndSubscribe@{publishAndSubscribe}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{publishAndSubscribe}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::publishAndSubscribe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_a57413d733e33b493abd929a7e46ff3dc}
+This method will inform the RTI about the types of data that the federate will be creating, and the types of data we are interested in hearing about as other federates produce it. 
+
+publish all attributes of ObjectRoot.A
+
+before we can register instance of the object class ObjectRoot.A and update the values of the various attributes, we need to tell the RTI that we intend to publish this information\par
+
+
+package the information into a handle set
+
+do the actual publication
+
+subscribe to all attributes of ObjectRoot.A
+
+we also want to hear about the same sort of information as it is created and altered in other federates, so we need to subscribe to it
+
+publish the interaction class InteractionRoot.X
+
+we want to send interactions of type InteractionRoot.X, so we need to tell the RTI that we're publishing it first. We don't need to inform it of the parameters, only the class, making it much simpler
+
+do the publication
+
+subscribe to the InteractionRoot.X interaction //
+
+we also want to receive other interaction of the same type that are sent out by other federates, so we have to subscribe to it first 
+
+\hypertarget{class_example_c_p_p_federate_afe34dcca7757b66ebbf9d2dea37e3440}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!registerObject@{registerObject}}
+\index{registerObject@{registerObject}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{registerObject}]{\setlength{\rightskip}{0pt plus 5cm}ObjectInstanceHandle ExampleCPPFederate::registerObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_afe34dcca7757b66ebbf9d2dea37e3440}
+This method will register an instance of the class ObjectRoot.A and will return the federation-\/wide unique handle for that instance. Later in the simulation, we will update the attribute values for this instance \hypertarget{class_example_c_p_p_federate_a1b8a60b635555f1723eab0bde159f5f5}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!runFederate@{runFederate}}
+\index{runFederate@{runFederate}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{runFederate}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::runFederate (
+\begin{DoxyParamCaption}
+\item[{std::string}]{ federateName, }
+\item[{std::string}]{ fom, }
+\item[{std::string}]{ address}
+\end{DoxyParamCaption}
+)}}
+\label{class_example_c_p_p_federate_a1b8a60b635555f1723eab0bde159f5f5}
+
+
+Main Simulation Method. 
+
+Everything will be handled here
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em federateName}]How the federate is called in simulation \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+1. create the RTIambassador
+
+$<$ vector args contains all necessary rti parameters
+
+2. create and join to the federation NOTE: some other federate may have already created the federation, in that case, we'll just try and join it
+
+3. join the federation
+
+create the federate ambassador and join the federation
+
+initialize the handles -\/ have to wait until we are joined
+
+4. announce the sync point
+
+announce a sync point to get everyone on the same page. if the point has already been registered, we'll get a callback saying it failed, but we don't care about that, as long as someone registered it
+
+WAIT FOR USER TO KICK US OFF.\par
+ So that there is time to add other federates, we will wait until the user hits enter before proceeding. That was, you have time to start other federates.
+
+5. achieve the point and wait for synchronization
+
+tell the RTI we are ready to move past the sync point and then wait until the federation has synchronized on
+
+9.1 update the attribute values of the instance
+
+9.2 send an interaction
+
+9.3 request a time advance and wait until we get it 
+
+\hypertarget{class_example_c_p_p_federate_a60bb15d2fc7a3437c13e8d8e09df8a1a}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!sendInteraction@{sendInteraction}}
+\index{sendInteraction@{sendInteraction}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{sendInteraction}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::sendInteraction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_a60bb15d2fc7a3437c13e8d8e09df8a1a}
+This method will send out an interaction of the type InteractionRoot.X. Any federates which are subscribed to it will receive a notification the next time they tick(). Here we are passing only two of the three parameters we could be passing, but we don't actually have to pass any at all! 
+
+create the necessary container and values
+
+create the collection to store the values in
+
+generate the new values
+
+send the interaction
+
+if you want to associate a particular timestamp with the interaction, you will have to supply it to the RTI. Here we send another interaction, this time with a timestamp: 
+
+\hypertarget{class_example_c_p_p_federate_aaf7e26b8a397f6d87ae2c27326cde893}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!toVariableLengthData@{toVariableLengthData}}
+\index{toVariableLengthData@{toVariableLengthData}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{toVariableLengthData}]{\setlength{\rightskip}{0pt plus 5cm}rti1516::VariableLengthData ExampleCPPFederate::toVariableLengthData (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_aaf7e26b8a397f6d87ae2c27326cde893}
+something like a serialize function.\par
+ The RTI does not know everything about datatypes. It just knows a byte format. To get this openrti offers VariableLengthData. \hypertarget{class_example_c_p_p_federate_ad2d6193d942e59a2cf5ee05531962967}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!updateAttributeValues@{updateAttributeValues}}
+\index{updateAttributeValues@{updateAttributeValues}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{updateAttributeValues}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::updateAttributeValues (
+\begin{DoxyParamCaption}
+\item[{ObjectInstanceHandle}]{ objectHandle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_ad2d6193d942e59a2cf5ee05531962967}
+This method will update all the values of the given object instance. It will set each of the values to be a string which is equal to the name of the attribute plus the current time. eg \char`\"{}aa:10.0\char`\"{} if the time is 10.0. 
+
+Note that we don't actually have to update all the attributes at once, we could update them individually, in groups or not at all! 
+
+create the necessary container and values
+
+create the collection to store the values in, as you can see this is quite a lot of work
+
+generate the new values
+
+do the actual update
+
+note that if you want to associate a particular timestamp with the update. here we send another update, this time with a timestamp: 
+
+\hypertarget{class_example_c_p_p_federate_a8a6fa5956cc241097e15385ca2da433f}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!waitForUser@{waitForUser}}
+\index{waitForUser@{waitForUser}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{waitForUser}]{\setlength{\rightskip}{0pt plus 5cm}void ExampleCPPFederate::waitForUser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_example_c_p_p_federate_a8a6fa5956cc241097e15385ca2da433f}
+Blocks until the user hits enter 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_example_c_p_p_federate_acc3635b1ef16e90ac4fad62150808f1e}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!fedamb@{fedamb}}
+\index{fedamb@{fedamb}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{fedamb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ExampleFedAmb}$\ast$ {\bf ExampleCPPFederate::fedamb}}}
+\label{class_example_c_p_p_federate_acc3635b1ef16e90ac4fad62150808f1e}
+Own Federate Ambassador implementation \hypertarget{class_example_c_p_p_federate_ac4d4b4416ce7ab50284c6a3c2deecaa4}{
+\index{ExampleCPPFederate@{ExampleCPPFederate}!rtiamb@{rtiamb}}
+\index{rtiamb@{rtiamb}!ExampleCPPFederate@{ExampleCPPFederate}}
+\subsubsection[{rtiamb}]{\setlength{\rightskip}{0pt plus 5cm}std::auto\_\-ptr$<$rti1516::RTIambassador$>$ {\bf ExampleCPPFederate::rtiamb}}}
+\label{class_example_c_p_p_federate_ac4d4b4416ce7ab50284c6a3c2deecaa4}
+RTI ambassador to comunicate with RTI 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_example_c_p_p_federate_8h}{ExampleCPPFederate.h}\item 
+\hyperlink{_example_c_p_p_federate_8cpp}{ExampleCPPFederate.cpp}\end{DoxyCompactItemize}
