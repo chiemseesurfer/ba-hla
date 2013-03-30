@@ -30,6 +30,9 @@ This repository contains a example implementation of **[HLA][]** based on
 
 ### Installation from Source
 - clone it from GitHub: `git clone https://github.com/chiemseesurfer/ba-hla.git`
+- cd into directory: `cd ba-hla`
+- create new folder called build: `mkdir build`
+- change to folder and generate makefile with cmake: `cd build; cmake ../source/`
 - Do `make all` and `make install` to perform installation under
   `/usr/local/bin`
 - Just call `make all` if you don't want to perform installation under `/usr/local/bin`
