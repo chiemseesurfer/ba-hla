@@ -53,3 +53,7 @@ If you have rtinode running on the same computer as ba-hla you can use something
 like:
     
     ba-hla --name myFederate --address 127.0.0.1 --fom /tmp/testFom.xml
+
+### Documentation
+The source code documentation is available in the repository or can be seen as a
+html-page [here](http://doxygen.maxoberberger.net/ba-hla/)
