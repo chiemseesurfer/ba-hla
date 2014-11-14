@@ -1,8 +1,4 @@
-language: c++
-
-compiler:
-    - cmake
-    - gcc
+language: cpp
 
 before_install:
     - mkdir build
