@@ -1,5 +1,3 @@
-language: cpp
-
 install: 
     - mkdir build
     - cd build && cmake ../source
