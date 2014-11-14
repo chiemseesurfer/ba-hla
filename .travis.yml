@@ -4,4 +4,4 @@ before_install:
     - mkdir build
     - cd build && cmake ../source
 
-install: make all
+install:
