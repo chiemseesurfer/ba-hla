@@ -4,8 +4,8 @@ compiler:
     - cmake
     - gcc
 
-install:
+before_install:
     - mkdir build
-    - cd build
-    - cmake ../source
-    - make all
+    - cd build && cmake ../source
+
+install: make all
