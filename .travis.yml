@@ -1,0 +1,11 @@
+language: c++
+
+compiler:
+    - cmake
+    - gcc
+
+install:
+    - mkdir build
+    - cd build
+    - cmake ../source
+    - make all
