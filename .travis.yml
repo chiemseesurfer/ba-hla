@@ -1,7 +1,5 @@
 language: cpp
 
-before_install:
+install: 
     - mkdir build
     - cd build && cmake ../source
-
-install:
